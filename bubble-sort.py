@@ -13,6 +13,7 @@ plt.plot(range(a),bubble,'ok')
 plt.title("Lista Original")
 plt.xlabel(u"Posição")
 plt.ylabel("Valor")
+plt.savefig("C:/Users/Gam/Documents/pratica-shell/pratica-py-gam/fig/bubble-inicio.png")
 plt.show()
 
 while count > 0: #enquanto a variável contagem não se esgotar, o programa roda de novo e de novo.
@@ -25,6 +26,14 @@ while count > 0: #enquanto a variável contagem não se esgotar, o programa roda
 #efetivamente, o que fizemos foi trocar um item pelo outro.
 
 print("Lista em ordem crescente: ", bubble) #após ele repetir o loop 300 vezes imprimimos, por fim, o resultado.
+
+plt.figure()
+plt.plot(range(a),bubble,'ok')
+plt.title("Lista Original")
+plt.xlabel(u"Posição")
+plt.ylabel("Valor")
+plt.savefig("C:/Users/Gam/Documents/pratica-shell/pratica-py-gam/fig/bubble-fim.png")
+plt.show()
 
 print("Lista dos cinco maiores valores: ", bubble[a-5:]) #aqui ele imprime os cinco maiores valores
 
